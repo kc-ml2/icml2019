@@ -21,3 +21,10 @@ Kaufman et al.
 * Each representation is then iteratively refined in parallel so that sum of mask reconstruction of each representation succesfully reconstructs the original input scene. 
 * The take-away from this work is using separate slots and mask to reconstruct each object separately, achieving ability to focus in specific region of the input image. 
 
+[**TibGM: A Transferable and Information-Based Graphical Model Approach for Reinforcement Learning**]()
+
+Adel et al.
+
+* Proposing a new mutual information based objective which views different variables, such as states, actions, hidden representations, rewards, global representation, as nodes of a graphical model and formulates the mutual information based objective, precisely information bottlenecks, to represent the relationship between these variables.
+* One example would be to maximize the mutual information between the action and the reward information, b_t, I(a_t, b_t) while minimizing the mutual information between the global represenation, z, and the reward information, b_t, to encourage generalization. 
+* Thus forming, max I(a_t, b_t) - beta * I(z, b_t | s_t)
